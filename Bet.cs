@@ -29,7 +29,7 @@ namespace Cat_Race_Assignment
 
             if (Amount > 1)
             {
-                description = String.Format("{0} bets ${1} on bike #{2}", Bettor.Name, Amount, cat);
+                description = String.Format("{0} bets ${1} on cat #{2}", Bettor.Name, Amount, cat);
             }
             else
             {
@@ -42,11 +42,14 @@ namespace Cat_Race_Assignment
 
         public int PayOut(int Winner)//code for payout for that cat who win the race
         {
-            if (cat == Winner)
-            {
-                return Amount;
+
+           if (cat == Winner)
+           {
+
+                 return Amount;
+
             }
-            return -Amount;
+                  return -Amount;
         }
     }
 }

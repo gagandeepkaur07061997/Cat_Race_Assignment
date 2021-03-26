@@ -50,6 +50,7 @@ namespace Cat_Race_Assignment
             this.cat2 = new System.Windows.Forms.PictureBox();
             this.cat4 = new System.Windows.Forms.PictureBox();
             this.cat3 = new System.Windows.Forms.PictureBox();
+            this.Endgame = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -225,7 +226,7 @@ namespace Cat_Race_Assignment
             // 
             this.Placebet.BackColor = System.Drawing.Color.Yellow;
             this.Placebet.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Placebet.Location = new System.Drawing.Point(12, 399);
+            this.Placebet.Location = new System.Drawing.Point(12, 372);
             this.Placebet.Name = "Placebet";
             this.Placebet.Size = new System.Drawing.Size(93, 66);
             this.Placebet.TabIndex = 1;
@@ -237,7 +238,7 @@ namespace Cat_Race_Assignment
             // 
             this.Race.BackColor = System.Drawing.Color.Yellow;
             this.Race.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Race.Location = new System.Drawing.Point(131, 399);
+            this.Race.Location = new System.Drawing.Point(128, 372);
             this.Race.Name = "Race";
             this.Race.Size = new System.Drawing.Size(89, 66);
             this.Race.TabIndex = 2;
@@ -291,12 +292,23 @@ namespace Cat_Race_Assignment
             this.cat3.TabIndex = 7;
             this.cat3.TabStop = false;
             // 
+            // Endgame
+            // 
+            this.Endgame.Location = new System.Drawing.Point(45, 449);
+            this.Endgame.Name = "Endgame";
+            this.Endgame.Size = new System.Drawing.Size(125, 45);
+            this.Endgame.TabIndex = 11;
+            this.Endgame.Text = "End game";
+            this.Endgame.UseVisualStyleBackColor = true;
+            this.Endgame.Click += new System.EventHandler(this.Endgame_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(916, 510);
+            this.Controls.Add(this.Endgame);
             this.Controls.Add(this.cat3);
             this.Controls.Add(this.cat4);
             this.Controls.Add(this.cat2);
@@ -346,6 +358,7 @@ namespace Cat_Race_Assignment
         private System.Windows.Forms.PictureBox cat2;
         private System.Windows.Forms.PictureBox cat4;
         private System.Windows.Forms.PictureBox cat3;
+        private System.Windows.Forms.Button Endgame;
     }
 }
 

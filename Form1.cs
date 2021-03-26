@@ -27,7 +27,7 @@ namespace Cat_Race_Assignment
 
     private void Placebet_Click(object sender, EventArgs e)
         {
-            int GuyNumber = 1;
+            int GuyNumber = 0;
 
             if (radioButtonjoe.Checked)
             {
@@ -57,7 +57,7 @@ namespace Cat_Race_Assignment
             { 
             label6.Text = string.Format("Minimum Bet $1", (int)numericUpDown1.Minimum);//Showing the minimum bet rate in label
 
-            int startingPosition = pictureBox1.Right - pictureBox1.Left; //code to set the variable for starting position from car 1
+            int startingPosition = cat1.Right - pictureBox1.Left; //code to set the variable for starting position from car 1
             int raceTrackLength = pictureBox1.Size.Width;//code to set the variable of racetrack's length
 
             //code to set the values of the array of the class greyhound for cat race
@@ -101,19 +101,19 @@ namespace Cat_Race_Assignment
         {
             bool NoWinner = true;
             int winnercat;
-            Race.Enabled = false;//code to make the button enabled once the race finish
+            
 
             while (NoWinner)
             {
                 Application.DoEvents();
                 for (int i = 0; i < cats.Length; i++)//code to start the race and finish it till the end line of track 
                 {
-                    Thread.Sleep(2);//sleep function for the speed of cars
-                    if (cats[i].Run())//here run function is called from greyhound class for running the cats and condition is checked for three random cars
+                    Thread.Sleep(1);//sleep function for the speed of cats
+                    if (cats[i].Run())//here run function is called from greyhound class for running the cats and condition is checked 
                     {
                         winnercat = i + 1;
                         NoWinner = false;
-                        MessageBox.Show("We have a winner - Bike #" + winnercat);
+                        MessageBox.Show("We have a winner - cat #" + winnercat);
                         foreach (Guy guy in guys)
                         {
                             if (guy.MyBet != null)//condition is checked for betting
@@ -134,14 +134,17 @@ namespace Cat_Race_Assignment
                 }
 
             }
-
+        }
           
-
+        private void Endgame_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
         }
 
        
+            }
     }
-}
+
 
 
         
