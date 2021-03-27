@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace Cat_Race_Assignment
 {
-    class Guy
+    class Guy : Greyhound
     {
         //gloabl variables declaration
         public string Name;
@@ -16,7 +16,7 @@ namespace Cat_Race_Assignment
 
         public RadioButton MyRadioButton;
         public Label MyLabel;
-        //public Button MyButton;
+        public Button MyButton;
 
         public Guy(string Name, Bet MyBet, int Cash, RadioButton MyRadioButton, Label MyLabel) //this is constructor
         {

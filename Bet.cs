@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Cat_Race_Assignment
 {
-    class Bet
+    class Bet 
     {
         // variables declaration
         public int Amount;

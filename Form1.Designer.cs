@@ -32,12 +32,12 @@ namespace Cat_Race_Assignment
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.Minimunbet = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDowncat = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownbet = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.radioButtonAl = new System.Windows.Forms.RadioButton();
@@ -45,16 +45,16 @@ namespace Cat_Race_Assignment
             this.radioButtonjoe = new System.Windows.Forms.RadioButton();
             this.Placebet = new System.Windows.Forms.Button();
             this.Race = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Raceground = new System.Windows.Forms.PictureBox();
             this.cat1 = new System.Windows.Forms.PictureBox();
             this.cat2 = new System.Windows.Forms.PictureBox();
             this.cat4 = new System.Windows.Forms.PictureBox();
             this.cat3 = new System.Windows.Forms.PictureBox();
             this.Endgame = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDowncat)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownbet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Raceground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cat1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cat2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cat4)).BeginInit();
@@ -63,12 +63,12 @@ namespace Cat_Race_Assignment
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.Minimunbet);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.numericUpDown2);
-            this.groupBox1.Controls.Add(this.numericUpDown1);
+            this.groupBox1.Controls.Add(this.numericUpDowncat);
+            this.groupBox1.Controls.Add(this.numericUpDownbet);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.radioButtonAl);
@@ -82,15 +82,15 @@ namespace Cat_Race_Assignment
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Betting system";
             // 
-            // label6
+            // Minimunbet
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Yellow;
-            this.label6.Location = new System.Drawing.Point(157, 31);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(77, 13);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Minimum bet";
+            this.Minimunbet.AutoSize = true;
+            this.Minimunbet.BackColor = System.Drawing.Color.Yellow;
+            this.Minimunbet.Location = new System.Drawing.Point(157, 31);
+            this.Minimunbet.Name = "Minimunbet";
+            this.Minimunbet.Size = new System.Drawing.Size(77, 13);
+            this.Minimunbet.TabIndex = 10;
+            this.Minimunbet.Text = "Minimum bet";
             // 
             // label5
             // 
@@ -123,46 +123,46 @@ namespace Cat_Race_Assignment
             this.label3.TabIndex = 7;
             this.label3.Text = "Joe has not placed bet ";
             // 
-            // numericUpDown2
+            // numericUpDowncat
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(304, 65);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
+            this.numericUpDowncat.Location = new System.Drawing.Point(304, 65);
+            this.numericUpDowncat.Maximum = new decimal(new int[] {
+            4,
+            0,
+            0,
+            0});
+            this.numericUpDowncat.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDowncat.Name = "numericUpDowncat";
+            this.numericUpDowncat.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDowncat.TabIndex = 6;
+            this.numericUpDowncat.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // numericUpDownbet
+            // 
+            this.numericUpDownbet.BackColor = System.Drawing.Color.White;
+            this.numericUpDownbet.Location = new System.Drawing.Point(303, 24);
+            this.numericUpDownbet.Maximum = new decimal(new int[] {
             50,
             0,
             0,
             0});
-            this.numericUpDown2.Minimum = new decimal(new int[] {
+            this.numericUpDownbet.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown2.TabIndex = 6;
-            this.numericUpDown2.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.BackColor = System.Drawing.Color.White;
-            this.numericUpDown1.Location = new System.Drawing.Point(303, 24);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
-            50,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown1.TabIndex = 5;
-            this.numericUpDown1.Value = new decimal(new int[] {
+            this.numericUpDownbet.Name = "numericUpDownbet";
+            this.numericUpDownbet.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDownbet.TabIndex = 5;
+            this.numericUpDownbet.Value = new decimal(new int[] {
             1,
             0,
             0,
@@ -246,14 +246,14 @@ namespace Cat_Race_Assignment
             this.Race.UseVisualStyleBackColor = false;
             this.Race.Click += new System.EventHandler(this.Race_Click);
             // 
-            // pictureBox1
+            // Raceground
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(817, 340);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.Raceground.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.Raceground.Location = new System.Drawing.Point(12, 12);
+            this.Raceground.Name = "Raceground";
+            this.Raceground.Size = new System.Drawing.Size(817, 340);
+            this.Raceground.TabIndex = 3;
+            this.Raceground.TabStop = false;
             // 
             // cat1
             // 
@@ -307,13 +307,13 @@ namespace Cat_Race_Assignment
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(916, 510);
+            this.ClientSize = new System.Drawing.Size(919, 507);
             this.Controls.Add(this.Endgame);
             this.Controls.Add(this.cat3);
             this.Controls.Add(this.cat4);
             this.Controls.Add(this.cat2);
             this.Controls.Add(this.cat1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.Raceground);
             this.Controls.Add(this.Race);
             this.Controls.Add(this.Placebet);
             this.Controls.Add(this.groupBox1);
@@ -321,9 +321,9 @@ namespace Cat_Race_Assignment
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDowncat)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownbet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Raceground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cat1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cat2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cat4)).EndInit();
@@ -343,8 +343,8 @@ namespace Cat_Race_Assignment
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown numericUpDowncat;
+        private System.Windows.Forms.NumericUpDown numericUpDownbet;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RadioButton radioButtonAl;
@@ -352,8 +352,8 @@ namespace Cat_Race_Assignment
         private System.Windows.Forms.RadioButton radioButtonjoe;
         private System.Windows.Forms.Button Placebet;
         private System.Windows.Forms.Button Race;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label Minimunbet;
+        private System.Windows.Forms.PictureBox Raceground;
         private System.Windows.Forms.PictureBox cat1;
         private System.Windows.Forms.PictureBox cat2;
         private System.Windows.Forms.PictureBox cat4;

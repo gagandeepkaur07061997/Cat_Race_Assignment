@@ -29,21 +29,21 @@ namespace Cat_Race_Assignment
         {
             int GuyNumber = 0;
 
-            if (radioButtonjoe.Checked)
-            {
+           if (radioButtonjoe.Checked)
+           {
                 GuyNumber = 0;// set joe's id as 0 on radio button click
             }
-            if (radioButtonBob.Checked)
+           if (radioButtonBob.Checked)
             {
                 GuyNumber = 1;//set bob's id as 1 on radio button click
-            }
-            if (radioButtonAl.Checked)
-            {
+           }
+           if (radioButtonAl.Checked)
+           {
                 GuyNumber = 2;//set Al's id as 2 on radio button click
             }
 
-            guys[GuyNumber].PlaceBet((int)numericUpDown1.Value, (int)numericUpDown2.Value);// code to set bet and show the amount on raddio button click 
-            guys[GuyNumber].UpdateLabels();//code to update  the labels 
+            guys[GuyNumber].PlaceBet((int)numericUpDownbet.Value, (int)numericUpDowncat.Value); // code to set bet and show the amount on raddio button click 
+            guys[GuyNumber].UpdateLabels(); //code to update  the labels 
         }
 
         private void Race_Click(object sender, EventArgs e)
@@ -55,10 +55,10 @@ namespace Cat_Race_Assignment
         
             private void RaceTrackSetting()
             { 
-            label6.Text = string.Format("Minimum Bet $1", (int)numericUpDown1.Minimum);//Showing the minimum bet rate in label
+            Minimunbet.Text = string.Format("Minimum Bet $1", (int)numericUpDownbet.Minimum);//Showing the minimum bet rate in label
 
-            int startingPosition = cat1.Right - pictureBox1.Left; //code to set the variable for starting position from car 1
-            int raceTrackLength = pictureBox1.Size.Width;//code to set the variable of racetrack's length
+            int startingPosition = cat1.Right - Raceground.Left; //code to set the variable for starting position from car 1
+            int raceTrackLength = Raceground.Size.Width;//code to set the variable of racetrack's length
 
             //code to set the values of the array of the class greyhound for cat race
             cats[0] = new Greyhound()
