@@ -53,12 +53,12 @@ namespace Cat_Race_Assignment
             MyBet.Amount = 0;
         }
 
-        public bool PlaceBet(int Amount, int Bike)//this function is for placing the bet 
+        public bool PlaceBet(int Amount, int cat)//this function is for placing the bet 
         {
             if (Amount <= Cash)
             {
                 //MyLabel.Text = "Busted";
-                MyBet = new Bet(Amount, Bike, this);
+                MyBet = new Bet(Amount, cat, this);
                 return true;
             }
 

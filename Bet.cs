@@ -11,15 +11,15 @@ namespace Cat_Race_Assignment
         // variables declaration
         public int Amount;
 
-        public int Cat { get; }
+        //public int cat { get; }
 
         public int cat;
         public Guy Bettor;
 
-        public Bet(int Amount, int Bike, Guy Bettor)//this is constructor
+        public Bet(int Amount, int cat, Guy Bettor)//this is constructor
         {
             this.Amount = Amount;
-            this.Cat = Cat;
+            this.cat = cat;
             this.Bettor = Bettor;
         }
 

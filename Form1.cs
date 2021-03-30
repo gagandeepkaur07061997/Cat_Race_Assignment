@@ -140,9 +140,7 @@ namespace Cat_Race_Assignment
         {
             Environment.Exit(0);
         }
-
-       
-            }
+    }
     }
 
 
